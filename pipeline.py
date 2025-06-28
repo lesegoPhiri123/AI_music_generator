@@ -9,6 +9,8 @@ import random
 from beat_detector import extract_beats
 from lyric_generator import load_model_and_tok, generate_lyrics
 from aligner import align_lines_to_beats
+import madmom
+from madmom.features.beats import RNNBeatProcessor, DBNBeatTrackingProcessor
 from flow_extractor import sample_flow
 from chorus_generator import load_chorus_model, generate_chorus
 from voice_cloning import (
